@@ -1,0 +1,35 @@
+.nav_links {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: auto;
+  padding-bottom: 25px;
+  padding-left: 45px;
+}
+.nav_links h2 {
+  margin: 0 25px;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  opacity: 0.7;
+  font-size: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 50ms ease;
+}
+.nav_links h2:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.nav_links::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav_links h2 {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+}

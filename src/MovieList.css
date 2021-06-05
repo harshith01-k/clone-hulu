@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+.movie-container {
+  height: 500px;
+  width: 500px;
+  padding: 20px;
+  transition: transform 50ms ease-out;
+}
+.movie-container:hover {
+  transform: scale(1.08);
+}
+
+.movie-container img {
+  width: 500px;
+  height: 300px;
+  object-fit: contain;
+}
+.movie-container h2 {
+  padding: 12px 0;
+}
+.di {
+  display: none;
+}
+.movie-container:hover .di {
+  display: block;
+}
+
+/* media querys */
+
+@media (max-width: 600px) {
+  .movie-container {
+    width: 100%;
+  }
+  .movie-container img {
+    width: 100%;
+  }
+  .di {
+    font-size: 10px;
+  }
+}
